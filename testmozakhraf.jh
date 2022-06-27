@@ -1,0 +1,39 @@
+
+entity Region {
+	regionName String
+}
+
+entity Country {
+	countryName String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}
+
+relationship OneToMany {
+	Region{country} to Country,
+    Country{country} to Location
+}
+
+
+// Set pagination optio
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

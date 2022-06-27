@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627154834",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "country",
+  "fields": [
+    {
+      "fieldName": "countryName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Country",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "country",
+      "relationshipName": "country",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "region",
+      "otherEntityRelationshipName": "country",
+      "relationshipName": "region",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

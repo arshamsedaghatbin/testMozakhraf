@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20220627154833",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "region",
+  "fields": [
+    {
+      "fieldName": "regionName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Region",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "country",
+      "otherEntityRelationshipName": "region",
+      "relationshipName": "country",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}
